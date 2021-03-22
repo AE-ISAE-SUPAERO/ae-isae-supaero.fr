@@ -1,6 +1,12 @@
 name: FTP Deploy
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    pull_request:
+      - main
 
 jobs:
   web-deploy:
