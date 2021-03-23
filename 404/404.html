@@ -1,103 +1,125 @@
-
 <head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="images/logo.ico" />
-	<style>
-		body{
-            padding: 0;
-            margin-left : 10%;
-            margin-right: 10%;
-            align-items: center;
-			background: #000;
-			color: white;
-			font-family: "Raleway", sans-serif;
-			overflow: hidden;
-        }
-        video#bgvid {
-            position: fixed; right: 0; bottom: 0;
-            min-width: 100%; min-height: 100%;
-            width: auto; height: auto; z-index: -100;
-            background: url("../../images/toulouse_beau.jpg") no-repeat;
-            background-size: cover;
-        }
+  <meta charset="UTF-8" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap&subset=latin-ext"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+  <style>
+    body {
+      padding: 0;
+      margin-left: 10%;
+      margin-right: 10%;
+      align-items: center;
+      background: #000;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      overflow: hidden;
+    }
+    video#bgvid {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      background: url("../../images/toulouse_beau.jpg") no-repeat;
+      background-size: cover;
+    }
 
-        div{
-			width: 100%; height: 100%;
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-content: center;
-            align-items: center;
+    div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+    }
+    span {
+      text-align: center;
+    }
+    h1,
+    h2 {
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 6em;
+      width: 100%;
+      word-wrap: break-word;
+    }
+    h2 {
+      font-size: 3em;
+    }
+    @media screen and (max-width: 1050px) {
+      h1 {
+        font-size: 4em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: -20vh;
+      height: 50vh;
+      z-index: 1;
+      transition: all 1s;
+    }
+    img:hover {
+      bottom: 0vh;
+    }
+    a {
+      appearance: button;
+      padding: 8px;
+      background: rgb(165, 10, 62);
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      transition: all 0.5s;
+      margin: 7px;
+    }
+    a:hover {
+      background: white;
+      color: rgb(197, 89, 107);
+      /* light 29A29D */
+      /* dark 28323B */
+    }
+  </style>
+  <title>AE ISAE-SUPAERO - Erreur 404</title>
 
-		}
-		span{
-			text-align: center;
-		}
-		h1, h2{
-            text-transform: uppercase;
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-EJRXPNP7PM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-		}
-		h1{
-			font-size: 6em;
-            width: 100%;
-            word-wrap: break-word;
-		}
-		h2{
-			font-size: 3em;
-        }
-        @media screen and (max-width:1050px){
-            h1 {
-                font-size: 4em;
-            }
-            h2 {
-                font-size: 2em;
-            }
-        }
-		img{
-			position: absolute;
-			bottom: -20vh;
-			height: 50vh;
-			z-index: 1;
-			transition: all 1s;
-		}
-		img:hover{
-			bottom: 0vh;
-		}
-		a{
-			appearance: button;
-			padding: 8px;
-			background: rgb(165, 10, 62);
-			color: white;
-			text-decoration: none;
-			border-radius: 7px;
-			transition: all 0.5s;
-			margin: 7px;
-		}
-		a:hover{
-			background: white;
-			color: rgb(197, 89, 107);
-			/* light 29A29D */
-			/* dark 28323B */
-		}
-	</style>
-	<title>AE ISAE-SUPAERO - Erreur 404</title>
+    gtag("config", "G-EJRXPNP7PM");
+  </script>
 </head>
 <body>
-    <video autoplay muted loop poster="" id="bgvid">
-        <source src="../bruit_numerique.mp4" type="video/mp4">
-        <source src="../bruit_numerique.webm" type="video/webm">
-    </video>
-	<div>
-		<span>
-			<h1>Page introuvable</h1>
-			<h2>Tu as cependant trouvé Edwige, la superchouette</h2>
-			<a href="/">Clique ici</a> pour laisser Edwige se reposer.
-		</span>
+  <video autoplay muted loop poster="" id="bgvid">
+    <source src="../bruit_numerique.mp4" type="video/mp4" />
+    <source src="../bruit_numerique.webm" type="video/webm" />
+  </video>
+  <div>
+    <span>
+      <h1>Page introuvable</h1>
+      <h2>Tu as cependant trouvé Edwige, la superchouette</h2>
+      <a href="/">Clique ici</a> pour laisser Edwige se reposer.
+    </span>
 
-		<img src="../edwige.png">
-		<span></span>
-		<span></span>
-	</div>
+    <img src="../edwige.png" />
+    <span></span>
+    <span></span>
+  </div>
 </body>
