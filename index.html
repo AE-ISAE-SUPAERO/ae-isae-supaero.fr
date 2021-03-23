@@ -1,191 +1,288 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-	<head>
-		<title>AE ISAE-SUPAERO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets2/css/main.css" />
-		<link rel="icon" type="image/x-icon" href="images/logo.ico" />
+  <head>
+    <title>AE ISAE-SUPAERO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets2/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
 
-	</head>
-	<body class="landing">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EJRXPNP7PM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-EJRXPNP7PM");
+    </script>
+  </head>
+  <body class="landing">
+    <!-- Header -->
 
+    <video autoplay muted loop poster="./images/toulouse_beau.jpg" id="bgvid">
+      <source src="./images/alpha_2018.mp4" type="video/webm" />
+      <source src="./images/alpha_2018.webm" type="video/mp4" />
+    </video>
+    <header id="header" class="alt">
+      <h1>
+        <a href="index.html"
+          >Association des élèves <strong>ISAE-Supaero</strong></a
+        >
+      </h1>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="admissibles.html"><span class="">Admissibles</span></a>
+          </li>
+          <li>
+            <a href="clubs.html"><span class="">Clubs</span></a>
+          </li>
+          <li>
+            <a href="campus.html"><span class="">Campus</span></a>
+          </li>
+          <li>
+            <a href="galerie.html"><span class="">Galerie</span></a>
+          </li>
+          <li><a href="https://shop.ae-isae-supaero.fr">Boutique</a></li>
+          <li>
+            <a href="https://student.ae-isae-supaero.fr/"
+              ><span class="">Espace Adhérents</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-		<!-- Header -->
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
-			<video autoplay muted loop poster="./images/toulouse_beau.jpg" id="bgvid">
-				<source src="./images/alpha_2018.mp4" type="video/webm">
-				<source src="./images/alpha_2018.webm" type="video/mp4">
-			</video>
-			<header id="header" class="alt">
+    <!-- Banner -->
+    <section id="banner">
+      <div class="grand_logo">
+        <img
+          src="./images/logo_fond_bleu_transparent.png"
+          width="300px"
+          height="300px"
+        />
+      </div>
+      <h2>Bienvenue dans vos rêves les plus fous</h2>
+      <p>
+        L'ISAE Supaero<br />
+        est déjà faite pour vous.
+      </p>
+      <ul class="actions">
+        <li>
+          <a href="alpha.html" class="button special big"
+            >Voir la vidéo Alpha</a
+          >
+        </li>
+      </ul>
+    </section>
+    <div id="premeierAffichage" style="display: none">
+      <div id="modal">
+        <h3>Bienvenue/Welcome !</h3>
+        <p>
+          Le site est pour l'instant uniquement en français, mais il y a une
+          page en anglais pour les étudiants étrangers.
+          <br />For the moment, the website is only in french, but there is an
+          english page for international students.
+        </p>
+        <a href="english.html" class="button special">I Don't speak French !</a>
 
-				<h1><a href="index.html">Association des élèves <strong>ISAE-Supaero</strong></a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="admissibles.html"><span class="">Admissibles</span></a></li>
-						<li><a href="clubs.html"><span class="">Clubs</span></a></li>
-                        <li><a href="campus.html"><span class="">Campus</span></a></li>
-                        <li><a href="galerie.html"><span class="">Galerie</span></a></li>
-						<li><a href="https://shop.ae-isae-supaero.fr">Boutique</a></li>
-						<li><a href="https://student.ae-isae-supaero.fr/"><span class="">Espace Adhérents</span></a></li>
+        <p>
+          <a onclick="close_overlay()" class="button small"
+            >C'est bon, la langue de Molière, je maîtrise</a
+          >
+        </p>
+        <a id="close" onclick="close_overlay()" class="icon fa-times"
+          >Fermer/Close</a
+        >
+      </div>
+    </div>
 
-					</ul>
-				</nav>
+    <!-- One -->
+    <section id="one" class="wrapper style2 special">
+      <div class="container 75%">
+        <div class="row 200%">
+          <div class="6u 12u$(medium)">
+            <header class="major">
+              <h2>Bienvenue sur le site du BDE de Supaero</h2>
+              <p>Vous êtes au bon endroit.</p>
+            </header>
+          </div>
+          <div class="6u$ 12u$(medium)">
+            <p>
+              Admissible, nous te conseillons l'excellente
+              <a href="alpha.html"> vidéo Alpha</a>, elle te montrera les joyaux
+              de notre belle école. <br />
+              Toutes les réponses à tes questions se trouvent sur la page dédiée
+              <a href="admissibles.html">Admissibles</a>.
+            </p>
+            <p>
+              Adhérents, rendez-vous dans
+              <a href="https://student.ae-isae-supaero.fr">l'espace Adhérents</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-			</header>
-
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
-			<!-- Banner -->
-			<section id="banner">
-
-				<div class="grand_logo"><img src="./images/logo_fond_bleu_transparent.png" width="300px" height="300px"></div>
-				<h2>Bienvenue dans vos rêves les plus fous</h2>
-				<p>L'ISAE Supaero<br /> est déjà faite pour vous.</p>
-				<ul class="actions">
-					<li><a href="alpha.html" class="button special big">Voir la vidéo Alpha</a></li>
-				</ul>
-			</section>
-		<div id="premeierAffichage" style="display:none;">
-			<div id="modal">
-				<h3>Bienvenue/Welcome !</h3>
-				<p>
-					Le site est pour l'instant uniquement en français, mais il y a une page en anglais pour les étudiants étrangers.
-					<br>For the moment, the website is only in french, but there is an english page for international students.
-				</p>
-				<a href="english.html" class="button special">I Don't speak French !</a>
-
-				<p>
-					<a onclick="close_overlay()" class="button small">C'est bon, la langue de Molière, je maîtrise</a>
-				</p>
-				<a id="close" onclick="close_overlay()" class="icon fa-times">Fermer/Close</a>
-			</div>
-
-		</div>
-
-
-			<!-- One -->
-				<section id="one" class="wrapper style2 special">
-					<div class="container 75%">
-						<div class="row 200%">
-							<div class="6u 12u$(medium)">
-								<header class="major">
-									<h2>Bienvenue sur le site du BDE de Supaero</h2>
-									<p>Vous êtes au bon endroit.</p>
-								</header>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<p>Admissible, nous te conseillons l'excellente <a href="alpha.html"> vidéo Alpha</a>, elle te montrera les joyaux de notre belle école. <br> Toutes les réponses à tes questions se trouvent sur la page dédiée <a href="admissibles.html">Admissibles</a>.</p>
-								<p>Adhérents, rendez-vous dans <a href="https://student.ae-isae-supaero.fr">l'espace Adhérents</a>.</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-			<!-- Three -->
-				<section id="three" class="wrapper style4">
-					<div class="container">
-						<!-- <header class="major special">
+    <!-- Three -->
+    <section id="three" class="wrapper style4">
+      <div class="container">
+        <!-- <header class="major special">
 							<h2>Mauris vulputate dolor</h2>
 							<p>Feugiat sed lorem ipsum magna</p>
 						</header> -->
-						<div class="feature-grid">
+        <div class="feature-grid">
+          <div class="feature">
+            <a href="admissibles.html"
+              ><div class="image rounded">
+                <img src="images/admissibles.jpg" alt="" /></div
+            ></a>
+            <div class="content">
+              <header>
+                <h4>Espace Admissibles</h4>
+                <p>Le google des bizuths</p>
+              </header>
+              <p>
+                Tout ce qu'il faut savoir sur l'institut et ses merveilles. Vous
+                n'aurez plus envie d'aller voir ailleurs, on vous aura prévenus.
+              </p>
+            </div>
+          </div>
 
-							<div class="feature">
-								<a href="admissibles.html"><div class="image rounded"><img src="images/admissibles.jpg" alt="" /></div></a>
-								<div class="content">
-									<header>
-										<h4>Espace Admissibles</h4>
-										<p>Le google des bizuths</p>
-									</header>
-									<p>Tout ce qu'il faut savoir sur l'institut et ses merveilles. Vous n'aurez plus envie d'aller voir ailleurs, on vous aura prévenus.</p>
-								</div>
-							</div>
+          <div class="feature">
+            <a href="clubs.html">
+              <div class="image rounded">
+                <img src="images/clubs.jpg" alt="" />
+              </div>
+            </a>
+            <div class="content">
+              <header>
+                <h4>Clubs & Assos</h4>
+                <p>L'annuaire des passe-temps</p>
+              </header>
+              <p>
+                C'est ici que sont regroupés tous les clubs & assos, rangés par
+                catégorie. Du sky-diving à la construction de fusée en passant
+                par l'oenologie, il n'y a qu'un mot : Supaero.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <a href="campus.html">
+              <div class="image rounded">
+                <img src="images/campus.jpg" alt="" />
+              </div>
+            </a>
+            <div class="content">
+              <header>
+                <h4>Campus</h4>
+                <p>Un petit paradis toulousain</p>
+              </header>
+              <p>
+                Situé dans la plus grosse ville étudiante de France, le campus
+                de Sup fait rougir tous les autres. Accessibilité, activités,
+                chaleur, rien ne manque.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <a href="https://shop.ae-isae-supaero.fr"
+              ><div class="image rounded">
+                <img src="images/boutique.jpg" alt="" /></div
+            ></a>
+            <div class="content">
+              <header>
+                <h4>Boutique</h4>
+                <p>Maman n'achète plus que chez eux</p>
+              </header>
+              <p>
+                Venez découvrir les produits de notre merveilleuse boutique à
+                des prix défiant toute concurrence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<div class="feature">
-								<a href="clubs.html"> <div class="image rounded"><img src="images/clubs.jpg" alt="" /></div> </a>
-								<div class="content">
-									<header>
-										<h4>Clubs & Assos</h4>
-										<p>L'annuaire des passe-temps</p>
-									</header>
-									<p>C'est ici que sont regroupés tous les clubs & assos, rangés par catégorie. Du sky-diving à la construction de fusée en passant par l'oenologie, il n'y a qu'un mot : Supaero.</p>
-								</div>
-							</div>
-							<div class="feature">
-								<a href="campus.html"> <div class="image rounded"><img src="images/campus.jpg" alt="" /></div> </a>
-								<div class="content">
-									<header>
-										<h4>Campus</h4>
-										<p>Un petit paradis toulousain</p>
-									</header>
-									<p>Situé dans la plus grosse ville étudiante de France, le campus de Sup fait rougir tous les autres. Accessibilité, activités, chaleur, rien ne manque.</p>
-								</div>
-							</div>
-							<div class="feature">
-								<a href="https://shop.ae-isae-supaero.fr"><div class="image rounded"><img src="images/boutique.jpg" alt="" /></div></a>
-								<div class="content">
-									<header>
-										<h4>Boutique</h4>
-										<p>Maman n'achète plus que chez eux</p>
-									</header>
-									<p>Venez découvrir les produits de notre merveilleuse boutique à des prix défiant toute concurrence.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+    <!-- Four -->
+    <section id="four" class="wrapper style3 special">
+      <div class="container">
+        <header class="major">
+          <h2>Le mot du prez</h2>
+          <p>Promis, c'est plein d'humilité</p>
+        </header>
+        <ul class="actions">
+          <li>
+            <a href="prez.html" class="button special big">Montrez-moi ça</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-			<!-- Four -->
-				<section id="four" class="wrapper style3 special">
-					<div class="container">
-						<header class="major">
-							<h2>Le mot du prez</h2>
-							<p>Promis, c'est plein d'humilité</p>
-						</header>
-						<ul class="actions">
-							<li><a href="prez.html" class="button special big">Montrez-moi ça</a></li>
-						</ul>
-					</div>
-				</section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul>
+          <span class="logo">
+            <a href="bde.html">
+              <img src="images/logo_fond_blanc_transparent_250.png" />
+            </a>
+          </span>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.facebook.com/BDE.Supaero/"
+              class="icon fa-facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/bde_isae_supaero/"
+              class="icon fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/bde-isae-supaero/"
+              class="icon fa-linkedin"
+            ></a>
+          </li>
+        </ul>
+        <ul class="assos">
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="partenaires.html">Nos partenaires</a></li>
+          <li><a href="https://www.as-isae-supaero.com/">Site de l'AS</a></li>
+          <li><a href="https://bda-isae-supaero.fr/">Site de l'AA</a></li>
+        </ul>
+        <ul class="copyright">
+          <li>
+            Ce site a été créé par le pôle
+            <a href="aep.html"><img src="./images/aep_45-28.png" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="english">
+        <a href="./english.html" class="icon fa-globe"> English</a>
+      </div>
+    </footer>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul>
-						<span class="logo"> <a href="bde.html"> <img src="images/logo_fond_blanc_transparent_250.png"> </a> </span>
-					</ul>
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/BDE.Supaero/" class="icon fa-facebook"></a></li>
-						<li><a href="https://www.instagram.com/bde_isae_supaero/" class="icon fa-instagram"></a></li>
-						<li><a href="https://www.linkedin.com/company/bde-isae-supaero/" class="icon fa-linkedin"></a></li>
-
-					</ul>
-					<ul class="assos">
-						<li><a href="contact.html">Nous contacter</a></li>
-						<li><a href="partenaires.html">Nos partenaires</a></li>
-						<li><a href="https://www.as-isae-supaero.com/">Site de l'AS</a></li>
-						<li><a href="https://bda-isae-supaero.fr/">Site de l'AA</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Ce site a été créé par le pôle <a href="aep.html"><img src="./images/aep_45-28.png"></a></li>
-					</ul>
-				</div>
-				<div class="english">
-					<a href="./english.html" class="icon fa-globe"> English</a>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets2/js/jquery.min.js"></script>
-			<script src="assets2/js/skel.min.js"></script>
-			<script src="assets2/js/util.js"></script>
-			<script src="assets2/js/main.js"></script>
-			<script src="assets2/js/first_visit.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets2/js/jquery.min.js"></script>
+    <script src="assets2/js/skel.min.js"></script>
+    <script src="assets2/js/util.js"></script>
+    <script src="assets2/js/main.js"></script>
+    <script src="assets2/js/first_visit.js"></script>
+  </body>
 </html>
