@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AE ISAE-SUPAERO - Générateur de signature</title>
+
+    <script>
+      function update() {
+        document.getElementById("span_name").innerHTML = document.getElementById("prenom").value + " " + document.getElementById("nom").value;
+        document.getElementById("span_poste").innerHTML = document.getElementById("poste").value;
+        document.getElementById("span_email").getElementsByTagName("span")[0].innerHTML = document.getElementById("email").value;
+        document.getElementById("span_email").getElementsByTagName("a")[0].href = "mailto:" + document.getElementById("email").value;
+        document.getElementById("span_tel").innerHTML = document.getElementById("tel").value;
+
+        if (document.getElementById("email2").value == "") {
+          document.getElementById("span_email2").style.display = "none";
+        }
+        else {
+          document.getElementById("span_email2").style.display = "block";
+          document.getElementById("span_email2").getElementsByTagName("span")[0].innerHTML = document.getElementById("email2").value;
+          document.getElementById("span_email2").getElementsByTagName("a")[0].href = "mailto:" + document.getElementById("email2").value;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <table
+      style="width: 525px; font-size: 11pt; font-family: Arial, sans-serif"
+      cellpadding="0"
+      cellspacing="0"
+      class="ng-scope"
+    >
+      <tbody>
+        <tr>
+          <td
+            width="125"
+            style="
+              font-size: 10pt;
+              font-family: Arial, sans-serif;
+              border-right: 1px solid;
+              border-right-color: #151b88;
+              width: 125px;
+              padding-right: 10px;
+              vertical-align: top;
+            "
+            valign="top"
+            rowspan="6"
+          >
+            <a href="https://www.ae-isae-supaero.fr" target="_blank"
+              ><img
+                alt="Logo"
+                style="width: 130px; height: auto; border: 0"
+                ng-src="https://ae-isae-supaero.fr/images/logo_fond_blanc_transparent.png"
+                src="https://ae-isae-supaero.fr/images/logo_fond_blanc_transparent.png"
+            /></a>
+          </td>
+
+          <td style="padding-left: 10px">
+            <table cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      color: #0079ac;
+                      font-family: Arial, sans-serif;
+                      width: 400px;
+                      padding-bottom: 5px;
+                      padding-left: 10px;
+                      vertical-align: top;
+                    "
+                    valign="top"
+                  >
+                    <strong>
+                      <span
+                        style="
+                          font-size: 11pt;
+                          font-family: Arial, sans-serif;
+                          color: #151b88;
+                        "
+                        id="span_name"
+                        >Prénom Nom
+                      </span>
+                      <span style="font-family: Ariel, sans-serif; font-size: 11pt; color: #000000"> | </span>
+                      <span
+                        style="
+                          font-family: Arial, sans-serif;
+                          font-size: 11pt;
+                          color: #000000;
+                        "
+                        id="span_poste"
+                      >
+                        Poste
+                      </span>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      color: #444444;
+                      font-family: Arial, sans-serif;
+                      padding-bottom: 5px;
+                      padding-top: 5px;
+                      padding-left: 10px;
+                      vertical-align: top;
+                      line-height: 17px;
+                    "
+                    valign="top"
+                  >
+                    <span id="span_email">
+                      <a
+                        href="mailto:prenom.nom@student.isae-supaero.fr"
+                        style="text-decoration: none"
+                      >
+                        <span
+                          style="
+                            font-size: 10pt;
+                            font-family: Arial, sans-serif;
+                            color: #000000;
+                          "
+                        >
+                          prenom.nom@student.isae-supaero.fr
+                        </span>
+                      </a>
+                    </span>
+
+                    <br />
+
+                    <span id="span_email2" style="display: block;">
+                      <a
+                        href="mailto:prenom.nom@ae-isae-supaero.fr"
+                        style="text-decoration: none"
+                      >
+                        <span
+                          style="
+                            font-size: 10pt;
+                            font-family: Arial, sans-serif;
+                            color: #000000;
+                          "
+                        >
+                          prenom.nom@ae-isae-supaero.fr
+                        </span>
+                      </a>
+                    </span>
+
+                    <span id="span_tel">
+                      <span
+                        style="
+                          font-size: 10pt;
+                          font-family: Arial, sans-serif;
+                          color: #000000;
+                        "
+                      >
+                        06 xx xx xx xx</span
+                      ></span
+                    >
+
+                    <br />
+
+                    <span>
+                      <a
+                        href="http://ae-isae-supaero.fr"
+                        target="_blank"
+                        rel="noopener"
+                        ><span
+                          style="
+                            font-size: 10pt;
+                            font-family: Arial, sans-serif;
+                            color: #000000;
+                          "
+                        >
+                          ae-isae-supaero.fr</span
+                        ></a
+                      ></span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      padding-bottom: 0px;
+                      padding-top: 5px;
+                      padding-left: 10px;
+                      vertical-align: bottom;
+                    "
+                    valign="bottom"
+                  >
+                    <span>
+                      <a
+                        href="https://www.facebook.com/BDE.Supaero/"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          width="19"
+                          ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/bease-fox/fb.png"
+                          alt="facebook icon"
+                          style="border: 0; height: 19px; width: 19px"
+                          src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/bease-fox/fb.png" /></a
+                      >&nbsp;</span
+                    ><span>
+                      <a
+                        href="https://www.linkedin.com/company/bde-isae-supaero/"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          width="19"
+                          ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/bease-fox/ln.png"
+                          alt="linkedin icon"
+                          style="border: 0; height: 19px; width: 19px"
+                          src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/bease-fox/ln.png" /></a
+                      >&nbsp;</span
+                    ><span>
+                      <a
+                        href="https://www.instagram.com/bde_isae_supaero/"
+                        target="_blank"
+                        rel="noopener"
+                        ><img
+                          width="19"
+                          ng-src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/bease-fox/it.png"
+                          alt="instagram icon"
+                          style="border: 0; height: 19px; width: 19px"
+                          src="https://codetwocdn.azureedge.net/images/mail-signatures/generator-dm/bease-fox/it.png" /></a
+                      >&nbsp;</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br />
+    <hr />
+
+    <table>
+      <tr>
+        <td>
+          <label for="nom">Nom : </label>
+        </td>
+        <td>
+          <input type="text" id="nom" name="nom" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="prenom">Prénom : </label>
+        </td>
+        <td>
+          <input type="text" id="prenom" name="prenom" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="poste">Poste : </label>
+        </td>
+        <td>
+          <input type="text" id="poste" name="poste" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email : </label>
+        </td>
+        <td>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="prenom.nom@student.isae-supaero.fr"
+            size="40"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email2">Email 2 (optionnel) :</label>
+        </td>
+        <td>
+          <input
+            type="text"
+            id="email2"
+            name="email2"
+            placeholder="prenom.nom@ae-isae-supaero.fr"
+            size="40"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="tel">Téléphone : </label>
+        </td>
+        <td>
+          <input type="text" id="tel" name="tel" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" id="submit" value="Créer" onclick="update();" />
+        </td>
+      </tr>
+      <br />
+    </table>
+
+    <br />
+    <p>
+      On pourra copier la signature au dessus une fois celle-ci générée, pour la coller dans ses paramètres de signature email.
+    </p>
+  </body>
+</html>
