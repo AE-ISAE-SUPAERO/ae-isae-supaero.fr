@@ -1,0 +1,90 @@
+<!-- MAIN -->
+<section id="main" class="wrapper">
+  <div class="container">
+    <header class="major special">
+      <h2>Nous contacter</h2>
+      <p>Questions, inquiétudes, mots doux ou insultes, on répond à tout.</p>
+    </header>
+
+    <a href="https://www.facebook.com/BDE.Supaero/"
+      ><h3 class="contact_h3">Nous contacter sur Facebook</h3></a
+    >
+
+    <section>
+      <h3 class="contact_h3">Formulaire de contact</h3>
+      <form id="contact" method="post" action="./assets/form.php">
+        <div class="row uniform 50%">
+          <div class="6u 12u$(xsmall)">
+            <input type="text" name="nom" id="nom" value="" placeholder="Nom" />
+          </div>
+          <div class="6u$ 12u$(xsmall)">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value=""
+              placeholder="Email"
+            />
+          </div>
+          <!-- <div class="12u$">
+                <div class="select-wrapper">
+                    <select name="category" id="category">
+                        <option value="">- Type de demande -</option>
+                        <option value="1">Question</option>
+                        <option value="1">Problème</option>
+                        <option value="1">Remarque</option>
+                        <option value="1">Autre</option>
+                    </select>
+                </div>
+            </div> -->
+
+          <div class="12u$ 12u$(small)">
+            <input
+              type="text"
+              name="objet"
+              id="objet"
+              value=""
+              placeholder="Objet"
+            />
+          </div>
+          <div class="12u$">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Votre message"
+              rows="6"
+            ></textarea>
+          </div>
+
+          <!-- <div class="6u 12u$(small)">
+                                <input type="checkbox" id="copy" name="copy">
+                                <label for="copy">Je souhaite recevoir une copie de ce mail</label>
+                            </div>
+                            <div class="6u$ 12u$(small)">
+                                <input type="checkbox" id="human" name="human">
+                                <label for="human">Je suis bien humain et non un robot polytechnicien</label>
+                            </div> -->
+
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LfC6qQZAAAAAOnro-uuZeLR4NcoBMsE-1keQG7V"
+          ></div>
+
+          <div class="12u$">
+            <ul class="actions">
+              <li>
+                <input
+                  type="submit"
+                  value="Envoyer"
+                  class="special"
+                  name="envoi"
+                />
+              </li>
+              <li><input type="reset" value="Réinitialiser" /></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+</section>
