@@ -5,7 +5,7 @@
 	********************************************************************************************
 */
 // destinataire est votre adresse mail. Pour envoyer à plusieurs à la fois, séparez-les par un point-virgule
-$destinataire = 'victorcolomb@outlook.com;ugo.bonnet-lorente@student.isae-supaero.fr;bertille.martinier@student.isae-supaero.fr';
+$destinataire = 'claire.ferraton@student.isae-supaero.fr;theo.roucaute@student.isae-supaero.fr';
 
 // copie ? (envoie une copie au visiteur)
 $copie = 'oui'; // 'oui' ou 'non'

@@ -23,11 +23,14 @@ const PAGES = [
   '/clubs/clubs-ae' => ['clubs-ae.html', 'Clubs AE'],
   '/clubs/clubs-as' => ['clubs-as.html', 'Clubs AS'],
   '/clubs/clubs-inde' => ['clubs-inde.html', 'Clubs indépendants'],
+  '/mentions-legales' => ['mentions-legales.html', 'Mentions légales'],
 ];
 
 // PARSE REQUESTED PAGE (404 elsewise)
-$request_uri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
-if (array_key_exists($request_uri, PAGES)) {
+$request_uri = rtrim(parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH), '/');
+if (empty($request_uri)) {
+  $html = 'home.html';
+} else if (array_key_exists($request_uri, PAGES)) {
   $html = PAGES[$request_uri][0];
   $page_title = PAGES[$request_uri][1];
 } else {
@@ -42,10 +45,10 @@ $is_home = $html == 'home.html' || $html == 'english.html';
 <html>
 
 <head>
+  <meta charset="utf-8" />
   <title>AE ISAE-SUPAERO <?php if (!empty($page_title)) {
                             echo (' - ' . $page_title);
                           } ?></title>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
@@ -57,21 +60,6 @@ $is_home = $html == 'home.html' || $html == 'english.html';
   <?php } else { ?>
     <link rel="stylesheet" href="/assets/css/main.css" />
   <?php } ?>
-
-  <!-- GOOGLE ANALYTICS -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJRXPNP7PM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-EJRXPNP7PM");
-  </script>
-  <script>
-    console.log("<?= $request_uri ?>")
-  </script>
 </head>
 
 <body <?php if ($is_home) {
@@ -142,6 +130,7 @@ $is_home = $html == 'home.html' || $html == 'english.html';
       <li><a href="/partenaires">Nos partenaires</a></li>
       <li><a href="https://www.as-isae-supaero.com/">Site de l'AS</a></li>
       <li><a href="https://bda-isae-supaero.fr/">Site de l'AA</a></li>
+      <li><a href="/mentions-legales">Mentions Légales</a></li>
     </ul>
     <ul class="copyright">
       <li>
