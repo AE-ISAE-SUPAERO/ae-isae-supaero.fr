@@ -60,6 +60,10 @@ $is_home = $html == 'home.html' || $html == 'english.html';
   <?php } else { ?>
     <link rel="stylesheet" href="/assets/css/main.css" />
   <?php } ?>
+
+  <?php if ($html == 'contact.html') { ?>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <?php } ?>
 </head>
 
 <body <?php if ($is_home) {
