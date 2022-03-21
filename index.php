@@ -64,6 +64,19 @@ $is_home = $html == 'home.html' || $html == 'english.html';
   <?php if ($html == 'contact.html') { ?>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <?php } ?>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJRXPNP7PM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EJRXPNP7PM');
+  </script>
 </head>
 
 <body <?php if ($is_home) {
