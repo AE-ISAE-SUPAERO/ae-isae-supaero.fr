@@ -49,7 +49,8 @@ if ($decode['success'] == true) {
   }
   else
   {
-    /*
+    echo '<p>'.$message_envoye.'</p>'."\n";
+     /*
     * cette fonction sert à nettoyer et enregistrer un texte
     */
     function Rec($text)
