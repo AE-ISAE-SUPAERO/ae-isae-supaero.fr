@@ -45,7 +45,7 @@ if ($decode['success'] == true) {
   if (!isset($_POST['envoi']))
   {
     // formulaire non envoyé
-    echo '<p>'.$message_erreur_formulaire.'</p>'."\n";
+    echo '<p>'.$message_envoye.'</p>'."\n";
   }
   else
   {
